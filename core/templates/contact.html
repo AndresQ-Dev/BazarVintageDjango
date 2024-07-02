@@ -5,11 +5,11 @@
 {% block title %} about {% endblock %}
 
 
-###Content###
 {% block content %}
 <main class="main__contact">
 
                 <form action="" method="POST" target="_blank" id="formulario_contacto">
+                    {% csrf_token %}
                     <label for="motivo">Motivo de consulta:</label><br>
                     <select name="motivo" id="motivo">
                         <option value="" disabled selected>Selecciona un motivo</option>
