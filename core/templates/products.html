@@ -2,46 +2,28 @@
 
 {% load static %}
 
-{% block title %} products {% endblock %}
+{% block title %} Products {% endblock %}
 
-
-###Content###
 {% block content %}
- <div class="filters">
-            <input type="button" value="Madera" id="filtro_madera">
-            <input type="button" value="Bazar" id="filtro_bazar">
-            <input type="button" value="Deco" id="filtro_deco">
-            <!-- <input type="button" value="Todo" id="filtro_todo"> -->
+<div class="filters">
+    <input type="button" value="Madera" id="filtro_madera">
+    <input type="button" value="Bazar" id="filtro_bazar">
+    <input type="button" value="Deco" id="filtro_deco">
+    {% comment %} <input type="button" value="Todo" id="filtro_todo"> {% endcomment %}
+</div>
+
+<div class="cards">
+    {% for product in products %}
+        <div class="card" data-category="{{ product.category }}">
+            <img src="{{ product.image.url }}" alt="{{ product.name }}">
+            <h3>{{ product.name }}</h3>
+            <p>{{ product.description }}</p>
+            <p class="price">{{ product.price|floatformat:2 }}</p>
         </div>
+    {% endfor %}
+</div>
+{% endblock %}
 
-        <div class="cards">
-            <div class="card" cat="madera">
-                <img src="{% static 'img/chair1.jpg' %}" alt="imagen silla">
-                <h3>Silla Zen Tallada</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa? Nesciunt quas velit</p>
-                <p class="price">$149.900,00</p>
-            </div>
-            <div class="card" cat="deco">
-                <img src="{% static 'img/cat_mouse.png' %}" alt="imagen gato-raton deco">
-                <h3>Gato-Ratón madera deco</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa? Nesciunt quas velit</p>
-            <p class="price">$19.900,00</p>
-            </div>
-            <div class="card" cat="deco">
-                <img src="{% static 'img/lamp.jpg' %}" alt="imagen lampara">
-                <h3>Lampara Vintage</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa? Nesciunt quas velit</p>
-                <p class="price">$15.000,00</p>
-            </div>
-            <div class="card" cat="bazar">
-                <img src="{% static 'img/sugar_bowl.png' %}" alt="imagen azucarera vintage">
-                <h3>Azucarera Vintage</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa? Nesciunt quas velit</p>
-                <p class="price">$25.000,00</p>
-            </div>
-        </div>
-
-        {% comment %} Agrego script JS para filtro {% endcomment %}
-        {% block script %} <script src="{% static 'js/script_filter.js' %}"></script> {% endblock %}
-
+{% block script %}
+<script src="{% static 'js/script_filter.js' %}"></script>
 {% endblock %}

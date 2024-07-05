@@ -1,22 +1,24 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const filterButtons = document.querySelectorAll('.filters input');
-    const cards = document.querySelectorAll('.card');
+    const buttons = document.querySelectorAll('.filters input');
+    const cards = document.querySelectorAll('.cards .card');
 
-    filterButtons.forEach(button => {
-        button.addEventListener('click', function () {
-            const category = this.value.toLowerCase();
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            const category = button.value.trim();
 
             cards.forEach(card => {
-                if (category === 'todo') {
-                    card.classList.remove('hidden');
+                const cardCategory = card.getAttribute('data-category').trim();
+
+                if (category === 'Todo') {
+                    card.style.display = 'block';
+                } else if (cardCategory === category) {
+                    card.style.display = 'block';
                 } else {
-                    if (card.getAttribute('cat') === category) {
-                        card.classList.remove('hidden');
-                    } else {
-                        card.classList.add('hidden');
-                    }
+                    card.style.display = 'none';
                 }
             });
         });
     });
 });
+
+

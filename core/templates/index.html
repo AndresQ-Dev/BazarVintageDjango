@@ -2,47 +2,22 @@
 
 {% load static %}
 
-{% block title %} index {% endblock %}
+{% block title %} Index {% endblock %}
 
 {% block content %}
 
 <div class="cards">
-                <div class="card">
-                    <img src="{% static 'img/chair1.jpg' %}" alt="imagen silla">
-                    <h3>Silla Zen Tallada</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa? Nesciunt quas velit</p>
-                    <p class="price">$149.900,00</p>
-                </div>
-                <div class="card">
-                    <img src="{% static 'img/cat_mouse.png' %}" alt="imagen gato-raton deco">
-                    <h3>Gato-Ratón madera deco</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa? Nesciunt quas velit</p>
-                <p class="price">$19.900,00</p>
-                </div>
-                <div class="card">
-                    <img src="{% static 'img/lamp.jpg' %}" alt="imagen lampara vintage">
-                    <h3>Lampara Vintage</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa? Nesciunt quas velit</p>
-                    <p class="price">$15.000,00</p>
-                </div>
-                <div class="card">
-                    <img src="{% static 'img/frame_branchs.jpg' %}" alt="imagen cuadro arbol">
-                    <h3>Cuadro Arbol Natural</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa? Nesciunt quas velit</p>
-                    <p class="price">$25.000,00</p>
-                </div>
-                <div class="card">
-                    <img src="{% static 'img/modular_table.jpg' %}" alt="imagen mesa modular madera">
-                    <h3>Mesa Modular</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa? Nesciunt quas velit</p>
-                    <p class="price">$450.000,00</p>
-                </div>
-                 <div class="card">
-                    <img src="{% static 'img/yinyang_frame.jpg' %}" alt="imagen mesa modular madera">
-                    <h3>Cuadro YinYang</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa? Nesciunt quas velit</p>
-                    <p class="price">$29.000,00</p>
-                </div>
+    {% for product in products %}
+        {% if not product.sale %}
+            <div class="card">
+                <img src="{{ product.image.url }}" alt="{{ product.name }}">
+                <h3>{{ product.name }}</h3>
+                <p>{{ product.description }}</p>
+                <p class="price">{{ product.price }}</p>
             </div>
+        {% endif %}
+    {% endfor %}
+</div>
+</div>
 
 {% endblock %}
