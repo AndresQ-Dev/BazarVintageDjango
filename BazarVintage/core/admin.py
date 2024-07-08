@@ -30,7 +30,7 @@ class ProductAdmin(admin.ModelAdmin):
     def to_sale(self, request, queryset):
         updated = queryset.update(sale=True)
         self.message_user(request, f'{updated} productos han sido enviados a SALE')
-    to_sale.short_description = 'Marcar productos seleccionados para "Sale"'
+    to_sale.short_description = 'Marcar productos seleccionados para Sale'
     
     # "ACTIONS" para sacar masivamente productos de Sale.
     def out_sale(self, request, queryset):
