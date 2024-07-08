@@ -7,7 +7,7 @@ from .models import Product
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = ('name', 'description', 'price', 'stock', 'category', 'sale', 'image_tag') #agrego columnas a mostrar 
-    search_fields = ['name',] #campo por el cual realiza la búsqueda
+    search_fields = ['name', 'description'] #campo por el cual realiza la búsqueda (recibe tupla)
 
     def get_search_results(self, request, queryset, search_term):
         queryset, use_distinct = super().get_search_results(request, queryset, search_term)
