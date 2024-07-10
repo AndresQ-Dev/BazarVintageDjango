@@ -1,4 +1,10 @@
+<div align="center">
 # Bazar Vintage
+</div>
+
+<div align="center">
+<img src="BazarVintage/core/assets/favicon" alt="Logo Bazar Vintage" style="max-width:100%;">
+</div>
 
 Bienvenido al repositorio del proyecto ***Bazar Vintage***. Este sitio web muestra una colección única de productos de decoración y bazar vintage o antiguo. Nuestro objetivo es ofrecer una experiencia única a los amantes del estilo vintage, proporcionando una cuidadosa selección de artículos que agreguen un toque de nostalgia y estilo a cualquier hogar.
 
