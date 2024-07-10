@@ -1,9 +1,9 @@
-<div align="center">
-# Bazar Vintage
+<div align="center" style="max-height:300">
+<h1>Bazar Vintage</h1>
 </div>
 
 <div align="center">
-<img src="BazarVintage/core/assets/favicon" alt="Logo Bazar Vintage" style="max-width:100%;">
+<img src="BazarVintage/core/static/img/favicon.png" alt="Logo Bazar Vintage" style="max-width:150px;">
 </div>
 
 Bienvenido al repositorio del proyecto ***Bazar Vintage***. Este sitio web muestra una colección única de productos de decoración y bazar vintage o antiguo. Nuestro objetivo es ofrecer una experiencia única a los amantes del estilo vintage, proporcionando una cuidadosa selección de artículos que agreguen un toque de nostalgia y estilo a cualquier hogar.
@@ -19,7 +19,7 @@ Bienvenido al repositorio del proyecto ***Bazar Vintage***. Este sitio web muest
 ### Mobile
 
 <div align="center">
-<img src="BazarVintage/core/assets/readme_mobile.jpg" alt="Captura version Mobile" style="max-height:500px;">
+<img src="BazarVintage/core/assets/readme_mobile.jpg" alt="Captura version Mobile" style="max-height:350px;">
 </div>
 
 ## Backend
@@ -92,15 +92,17 @@ Finalmente en el ícono ubicado en la esquina superior derecha Ud. puede acceder
 
 ## Características principales:
 
-- **Explora una Colección Única:** Descubre una amplia variedad de productos cuidadosamente seleccionados, desde muebles hasta accesorios decorativos, todos con un encanto vintage inigualable.
+✔️ **Explora una Colección Única:** Descubre una amplia variedad de productos cuidadosamente seleccionados, desde muebles hasta accesorios decorativos, todos con un encanto vintage inigualable.
 
-- **Diseño Intuitivo:** Navega por nuestro sitio de forma fácil y sencilla gracias a un diseño intuitivo y una interfaz de usuario amigable.
+✔️ **Diseño Intuitivo:** Navega por nuestro sitio de forma fácil y sencilla gracias a un diseño intuitivo y una interfaz de usuario amigable.
 
-- **Contacto:** Contamos con un formulario para consultas sencillo de usar.
+✔️ **Contacto:** Contamos con un formulario para consultas sencillo de usar.
 
-## Recursos y Herramientas
+✔️ **Crud:** Gestión integral de productos.
 
-- El proyecto se realizó con el framework ***[Django](https://www.djangoproject.com/)***.
+## 🚧 Recursos y Herramientas 🚧
+
+ El proyecto se realizó con el framework ***[Django](https://www.djangoproject.com/)***.
 - La maquetación se realizó con sobre HTML 5 con CSS **FlexBox**.
 - El sitio cuenta con 5 páginas totalmente responsive (Desktop, Tablet, Mobile)
   - Home, Products, Sale, Contact y About
@@ -115,7 +117,7 @@ Finalmente en el ícono ubicado en la esquina superior derecha Ud. puede acceder
 
 ## Cómo instalar el proyecto en local
 
-[Instrucciones para poner en marcha el proyecto](https://github.com/AndresQ-Dev/Miscelanios/blob/main/Instrucciones%20para%20Instalar%20Bazar%20Vintage.md)  
+🔗  [Instrucciones para poner en marcha el proyecto](https://github.com/AndresQ-Dev/Miscelanios/blob/main/Instrucciones%20para%20Instalar%20Bazar%20Vintage.md)  
 
 ## Contribuciones:
 
