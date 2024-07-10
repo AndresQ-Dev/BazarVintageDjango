@@ -107,6 +107,10 @@ Finalmente en el ícono ubicado en la esquina superior derecha Ud. puede acceder
 - Se utilizaron íconos de ***[FontAwesome](https://fontawesome.com/)*** y fuentes de ***[Google Fonts](https://fonts.google.com/)***.
 - Se agregan ***[Actions](https://docs.djangoproject.com/en/5.0/ref/contrib/admin/actions/)*** para aplicar  o quitar la propiedad de **Sale** forma másiva a productos.
 
+## Cómo instalar el proyecto en local
+
+[Instrucciones para poner en marcha el proyecto](https://github.com/AndresQ-Dev/Miscelanios/blob/main/Instrucciones%20para%20Instalar%20Bazar%20Vintage.md)  
+
 ## Contribuciones:
 
 Si deseas proponer cambios nos encantaría recibir tus contribuciones para mejorar y hacer crecer este proyecto. Si tienes alguna idea, sugerencia o corrección, no dudes en enviar un pull request.
