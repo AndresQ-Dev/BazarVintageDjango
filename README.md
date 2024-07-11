@@ -19,7 +19,7 @@ Bienvenido al repositorio del proyecto ***Bazar Vintage***. Este sitio web muest
 ### Mobile
 
 <div align="center">
-<img src="BazarVintage/core/assets/readme_mobile.jpg" alt="Captura version Mobile" style="max-height:350px;">
+<img src="BazarVintage/core/assets/readme_mobile.jpg" alt="Captura version Mobile" style="max-height:250px;">
 </div>
 
 ## Backend
