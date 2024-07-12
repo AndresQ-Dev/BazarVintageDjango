@@ -103,9 +103,9 @@ Finalmente en el ícono ubicado en la esquina superior derecha Ud. puede acceder
 ## 🚧 Recursos y Herramientas 🚧
 
  El proyecto se realizó con el framework ***[Django](https://www.djangoproject.com/)***.
-- La maquetación se realizó con sobre HTML 5 con CSS **FlexBox**.
+- La maquetación se realizó con sobre **HTML 5** con **CSS** **FlexBox**.
 - El sitio cuenta con 5 páginas totalmente responsive (Desktop, Tablet, Mobile)
-  - Home, Products, Sale, Contact y About
+  - Home, Products, Sale, Contact y About (más una de administración de productos)
 - El formulario de contacto incluye la posibilidad de cargar una imágen en formato jpg o png y se valida por JavaScript.
 - Se utilizan transiciones y animaciones de distitnto tipo en botones, cards, nav y footer.
 - El logo fue realizado por la AI ***[DALL-E 3](https://openai.com/index/dall-e-3/)***.
